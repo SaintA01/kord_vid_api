@@ -1,8 +1,10 @@
-module.exports = {
+@type {import('next').NextConfig}
+const nextConfig = {
+  output: 'export',
   images: {
-    domains: ['replicate.com', 'pbxt.replicate.delivery'],
+    unoptimized: true
   },
-  experimental: {
-    serverComponentsExternalPackages: ['replicate'],
-  },
+  trailingSlash: true
 }
+
+module.exports = nextConfig
