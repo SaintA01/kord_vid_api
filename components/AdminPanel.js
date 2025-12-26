@@ -29,7 +29,7 @@ export default function AdminPanel({ onBack }) {
   }, [authenticated])
 
   const login = async () => {
-    if (password === process.env.ADMIN_PASSWORD || password === 'admin123') {
+    if (password === process.env.ADMIN_PASSWORD || password === 'Excel1128_') {
       setAuthenticated(true)
     } else {
       alert('Incorrect password')
