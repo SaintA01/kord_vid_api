@@ -1,19 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ['replicate', 'openai'],
-  },
+module.exports = {
   images: {
-    domains: ['replicate.com', 'pbxt.replicate.delivery', 'cdn.runwayml.com'],
+    domains: ['replicate.com', 'pbxt.replicate.delivery'],
   },
-  // Increase timeout for API routes
-  api: {
-    responseLimit: false,
-    bodyParser: {
-      sizeLimit: '10mb',
-    },
-    externalResolver: true,
+  experimental: {
+    serverComponentsExternalPackages: ['replicate'],
   },
 }
-
-module.exports = nextConfig
