@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
-import VideoGenerator from './components/VideoGenerator'
-import AdminPanel from './components/AdminPanel'
+import VideoGenerator from '../components/VideoGenerator'
+import AdminPanel from '../components/AdminPanel'
 
 export default function Home() {
   const [isAdmin, setIsAdmin] = useState(false)
